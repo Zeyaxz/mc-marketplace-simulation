@@ -1,0 +1,198 @@
+.konten{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 92vh;
+    width: 80%;
+    transition: all 0.5s;
+}
+
+.judul-awal{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 24px;
+    padding-left: 10px;
+    color: white;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.konten h1{
+    text-shadow: 2px 2px rgb(0 0 0 / 50%);
+    margin: 20px 0;
+}
+
+.card{
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    width: 60%;
+    margin: 50px auto;
+    background-color: rgb(255 255 255 / 75%);
+    transition: all 0.5s;
+}
+
+.card .judul{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.konten-card{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    transition: all 0.5s;
+}
+
+.konten-card .welcome{
+    font-family: minecraft;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+
+.konten-card *:not(label,.kode,.kode *){
+    margin: 5px 0;
+}
+
+.konten-card form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.konten-card p a{
+    color: #008500;
+    text-decoration: none;
+}
+
+.konten-card p a:hover{
+    text-decoration: underline;
+}
+
+.konten-card .kode{
+    display: flex;
+}
+
+.konten-card form input{
+    width: 55px;
+    outline: none;
+    border: none;
+    background-color: rgb(0, 133, 66);
+    font-weight: 500;
+    color: white;
+    padding: 5px 10px;    
+    box-sizing: content-box !important;
+    box-shadow: 
+    0 -4px rgba(21, 108, 0, 0.5) inset, 
+    0 4px rgba(100, 253, 31, 0.99) inset, 
+    -4px 0 rgba(100, 253, 31, 0.5) inset, 
+    4px 0 rgba(21, 108, 0, 0.5) inset;
+    transition: all 0.5s;
+}
+.konten-card form input::placeholder{
+    color: rgba(255, 255, 255, 0.494);
+}
+
+.konten-card form button{
+    height: 30px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 133, 66);
+    box-shadow: 
+    0 -4px rgba(21, 108, 0, 0.5) inset, 
+    0 4px rgba(100, 253, 31, 0.99) inset, 
+    -4px 0 rgba(100, 253, 31, 0.5) inset, 
+    4px 0 rgba(21, 108, 0, 0.5) inset;
+}
+
+.konten-card form button:hover{
+    background-color: #313131;
+    box-shadow: 
+    0 -4px rgba(0, 0, 0, 0.5) inset, 
+    0 4px rgba(255, 255, 255, 0.2) inset, 
+    -4px 0 rgba(255, 255, 255, 0.2) inset, 
+    4px 0 rgba(0, 0, 0, 0.5) inset;
+    color: white;
+}
+
+
+
+@media (max-width: 1050px) {
+    .card {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .card {
+        margin: 5px auto;
+    }
+    .konten{
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .konten-card form input {
+        width: 45px;
+    }
+}
+
+@media (max-width: 646px){
+    .konten-card {
+        padding: 15px;
+    }
+
+    .konten-card .kode {
+        flex-direction: column;
+    }
+
+    .konten-card form input {
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .konten h1 {
+        margin: 10px 0;
+    }
+
+    
+}
+
+/* hp */
+@media (max-width: 575px){
+    .konten-card .welcome{
+        font-size: 16px;
+    }
+
+    .card{
+        width: 70%;
+    }
+}
+
+@media (max-width: 475px){
+    .card{
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px){
+    .konten-card {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 350px){
+    .konten-card .welcome{
+        font-size: 14px;
+    }
+    .konten-card {
+        padding: 5px;
+    }
+    .konten-card form input {
+        width: 94%;
+    }
+}

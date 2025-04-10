@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Minecraftbold';
+    src: url('/global/font/Minecrafter.Alt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('/global/font/Minecrafter.Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
